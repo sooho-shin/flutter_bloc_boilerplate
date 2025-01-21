@@ -46,8 +46,7 @@ getIt.registerLazySingleton(() => ApiService());
 getIt.registerLazySingleton(() => ExampleRepository(getIt<ApiService>()));
 
 와 같이 lazySingleton으로 등록을 해두면, 이후 어디서든 getIt<ApiService>()와 같이 간단히 인스턴스를 요청할 수 있습니다.
-
-    •	이를 통해 서비스나 리포지토리와 같은 의존성을 한 곳에서 관리하며, 유지보수가 편리해집니다.
+• 이를 통해 서비스나 리포지토리와 같은 의존성을 한 곳에서 관리하며, 유지보수가 편리해집니다.
 
 core/services/api_service.dart
 • Dio를 사용하여 API 호출을 담당하는 예시 서비스 클래스입니다.
