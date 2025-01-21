@@ -1,8 +1,8 @@
 # Flutter BLoC Boilerplate
 
-이 저장소는 **Flutter + BLoC** 아키텍처로 구성된 간단한 보일러플레이트 프로젝트입니다.  
-아키텍처 구조 예시, 의존성 주입(Dependency Injection), REST API 연동 예시(Todo API) 등이 포함되어 있어,  
-새로운 프로젝트 시작 시 기본 골격으로 활용할 수 있습니다.
+**Flutter + BLoC** 아키텍처로 구성된 간단한 보일러플레이트 프로젝트임.  
+아키텍처 구조 예시, 의존성 주입(Dependency Injection), REST API 연동 예시(Todo API) 등이 포함되어 있음
+새로운 프로젝트 시작 시 기본 골격으로 활용할 수 있음.
 
 ---
 
@@ -100,11 +100,19 @@ flutter_bloc_boilerplate/
 2. **build_runner(json_serializable 등) 코드 생성**
 
    ```bash
-   build_runner(json_serializable 등) 코드 생성
+   flutter pub run build_runner build --delete-conflicting-outputs
    ```
 
-3. **build_runner(json_serializable 등) 코드 생성**
+3. **앱 실행**
+
    ```bash
+   flutter run
+   ```
+
+4. **앱 실행 했는데 안되면 clean 하고 해보셈**
+   ```bash
+   flutter clean
+   flutter pub get
    flutter run
    ```
 
@@ -164,7 +172,7 @@ void setup() {
 
 ---
 
-#### 업데이트 / 개선 사항
+#### 업데이트 / 개선 사항 (지피티가 말한 개선사항임)
 
     •	BLoC 분할: 프로젝트 규모가 커지면 기능별로 여러 BLoC을 만들어 관리
     •	UI 위젯 분리: 공용 위젯은 presentation/widgets/에 배치
